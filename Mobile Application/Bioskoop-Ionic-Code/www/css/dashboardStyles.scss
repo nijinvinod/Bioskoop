@@ -1,0 +1,117 @@
+.bigIcon{
+	text-align:center;
+	margin-top:50%;
+	img{
+		width:60px;
+		height:50px;
+	}
+}
+.dashboardItem{
+	a{
+		.box{
+			width:48.5%;
+			height: 150px;
+			float:left;
+			text-align:center;
+			font-size:26px;
+			color:#fff;
+			position:relative;
+			margin-bottom: 10px;
+			.boxOverlay{
+				position:absolute;
+				padding-top:50px;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
+			.name{
+				font-size:16px;
+			}
+			.tweetCount{
+				margin-top: 5px;
+			}
+		}
+		&:first-child{
+			.box{
+				width:100%;
+				margin-bottom: 10px;
+				height: 200px;
+				
+				font-size:40px;
+				.boxOverlay{
+					padding-top:70px;
+				}
+				.name{
+					font-size:18px;
+				}
+				.tweetCount{
+					margin-top: 10px;
+				}
+			}
+		}
+		&:nth-child(even){
+			.box{
+				margin-right:0;
+				float: right;
+			}
+		}
+		&:nth-child(n){
+			.boxOverlay{
+				background: rgba(59, 31, 77, 0.8);
+				color: #fff;
+			}
+		}
+		&:nth-child(2n){
+			.boxOverlay{
+				background: rgba(82, 167, 249, 0.9);
+				color:#fff;
+			}
+		}
+		&:nth-child(3n){
+			.boxOverlay{
+				background: rgba(254, 186, 104, 0.9);
+			}
+		}
+		&:nth-child(4n){
+			.boxOverlay{
+				background: rgba(198, 38, 6, 0.8);
+				color:#fff;
+			}
+		}
+		
+		
+	}
+}
+
+.dashDetails{
+	padding-bottom:20px;
+	.itemPic{
+		width: 100%;
+		height:200px;
+		background: #fff;
+	}
+	.itemName{
+		margin: 10px 0;
+		text-align: center;
+		text-transform: uppercase;
+		font:{size:18px;}
+	}
+	.itemTweetCount{
+		text-align: center;
+		font:{size:38px;weight:bold}
+	}
+	.counts{
+		width: 100%;
+		text-align: center;
+	}
+	.circle{
+		&.neutral{
+			font-size:26px;
+		}
+	}
+}
+
+a.catLink{
+	border:0;
+}

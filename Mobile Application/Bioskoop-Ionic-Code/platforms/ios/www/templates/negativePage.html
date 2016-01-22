@@ -1,0 +1,19 @@
+<ion-view view-title="NEGATIVE">
+	<ion-content>
+		<div class="responseHeader negative">
+			<div class="">{{item.hashTag}}</div>
+			<div class="counter">{{item.negativeTweets.count}}/{{item.totalCount}}</div>
+		</div>
+		<div class="responses">
+			<a href="#/tab/insights/{{item.hashTag}}" ng-repeat="tweet in item.negativeTweets.tweets" ng-click="showTweet(tweet)">
+				<div class="tweetDet">
+					<div class="profileImg" style="background:url({{tweet.userDetails.url}}) no-repeat center; background-size:100% 100%"></div>
+					<div class="details">
+						<div class="pName">{{tweet.user}}</div>
+						<div class="msg ellipsis">{{tweet.message}}</div>
+					</div>
+				</div>
+			</a>
+	    </div>
+    </ion-content>
+</ion-view>

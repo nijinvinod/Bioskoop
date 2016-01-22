@@ -1,0 +1,40 @@
+<ion-view view-title="">
+	<ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-left">
+    </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+
+      <a class="button catLink" ng-href="#/tab/category/{{item.hashTag}}">
+        	<i class="icon ion-ios-people"></i>
+      </a>
+    </ion-nav-buttons>
+	<ion-content>
+		<div class="dashDetails">
+			<div class="itemPic">
+				<img src="{{item.imageUrl}}" style="width:100%;height:100%">
+			</div>
+	    	<div class="itemName">{{item.hashTag}}</div>
+	    	<div class="itemTweetCount">{{item.totalCount}}</div>
+	    	<div class="counts">
+	    		<a href="#/tab/positivePage/{{item.hashTag}}">
+			    	<div class="circle positive">
+			    		<i class="icon ion-social-twitter"></i>
+			    		<div class="c-content">{{item.positiveTweets.count}}<div>POSITIVE</div></div>
+			    	</div>
+		    	</a>
+		    	<a href="#/tab/negativePage/{{item.hashTag}}">
+			    	<div class="circle negative">
+			    		<i class="icon ion-social-twitter flip"></i>
+			    		<div class="c-content">{{item.negativeTweets.count}}<div>NEGATIVE</div></div>
+			    	</div>
+		    	</a>
+		    	<a href="#/tab/neutralPage/{{item.hashTag}}">
+			    	<div class="circle neutral">
+			    		<i class="icon ion-social-twitter"></i>&nbsp;<i class="icon ion-social-twitter flip"></i>
+			    		<div class="c-content">{{item.neutralTweets.count}}<div>NEUTRAL</div></div>
+			    	</div>
+		    	</a>
+	    	</div>
+	    	
+	    </div>
+    </ion-content>
+</ion-view>

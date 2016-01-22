@@ -1,0 +1,31 @@
+<ion-view view-title="CATEGORY SUPPORT">
+	<ion-content>
+		<div class="customTab">
+			<div class="tabItem" ng-click="tabAction('age')"><i class="icon ion-ios-people"></i><div>Age Category</div></div>
+			<div class="tabItem" ng-click="tabAction('gender')"><i class="icon ion-man"></i><i class="icon ion-woman"></i><div>Gender Category</div></div>
+		</div>
+		<div ng-show="action == 'age'">
+			<div class="subheading centerText allPadding">Hey Look! How many people from different Age Group supports <b>{{item.hashTag}}</b></div>
+			<div class="category">
+				<div class="circle" ng-repeat="cat in ageCategories">
+					{{cat.supportPercent}}<span class="smallGrey">%</span>
+					<div class="c-content">{{cat.supportGroup}}</div>
+				</div>
+		    </div>
+	    </div>
+	    <div ng-show="action == 'gender'">
+			<div class="subheading centerText allPadding">Hey Look! How <b>{{item.hashTag}}</b> is spread among Male & Female Audiences</div>
+			<div class="category">
+				<div class="circle">
+					{{maleSupport}}<span class="smallGrey">%</span>
+					<div class="c-content">MALE</div>
+				</div>
+				<div class="circle">
+					{{femaleSupport}}<span class="smallGrey">%</span>
+					<div class="c-content">FEMALE</div>
+				</div>
+		    </div>
+	    </div>
+	    
+    </ion-content>
+</ion-view>

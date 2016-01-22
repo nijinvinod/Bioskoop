@@ -1,0 +1,39 @@
+<ion-view view-title="BIOSKOOP" class="dashboardBg">
+  <ion-content class="padding">
+      <div class="dashboardItem">
+          <a ng-repeat="item in items" href="#/tab/details/{{item.hashTag}}">
+            <div class="box" style="background:url({{item.imageUrl}}) center no-repeat; background-size:100% 100%">
+              <div class="boxOverlay">
+              	<div class="name">{{item.hashTag}}</div>
+              	<div class="tweetCount">{{item.totalCount}}</div>
+              </div>
+            </div>
+          </a>
+          <div class="clearfix"></div>
+      </div>
+      <div ng-show="items.length == 0 && noHashtag == false" >
+          <div class="watsonLoading"></div>
+          <div class="loadingText">
+            <div>Hey! Hang On</div>
+            Bioskoop and Watson are having a conversation to bring you cool results!
+          </div>
+      </div>
+
+      <div ng-show="noHashtag != false">
+          <div class="bigIcon">
+            <img src="img/twitter.png"/>
+          </div>
+          <div class="loadingText" ng-show="error == undefined">
+            <div>New Here? Welcome</div>
+            <b>Bioskoop</b> & <b>Watson</b> will help you follow the Trending Topics.<br/>
+            <a class="button button-positive" style="margin-top:20px;" href="#/tab/addHashTag">#StartAdding</a>
+          </div>
+
+          <div class="loadingText" ng-show="error != undefined">
+            <div>Error In Communication</div>
+            <b>Bioskoop</b> & <b>Watson</b> will help you follow the Trending Topics.<br/>
+          </div>
+      </div>
+      
+  </ion-content>
+</ion-view>

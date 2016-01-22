@@ -1,0 +1,31 @@
+.category{
+	text-align:center;
+	.circle{
+		
+		font-size: 26px;
+		color: #555;
+		background: rgb(110, 191, 65);
+		box-shadow: inset 0 0 0 0;
+		.c-content{
+			bottom:-20px;
+			font-size:14px;
+			color:$positiveFgColor;
+		}
+		&:nth-child(2n){
+			background: rgb(82, 167, 249);
+			color:#fff;
+		}
+		&:nth-child(3n){
+			background: rgb(59, 31, 77);
+			color: #fff;
+		}
+		&:nth-child(4n){
+			background: rgb(198, 38, 6);
+			color:#fff;
+		}
+		
+		&:nth-child(5n){
+			background: rgb(254, 186, 104);
+		}
+	}
+}

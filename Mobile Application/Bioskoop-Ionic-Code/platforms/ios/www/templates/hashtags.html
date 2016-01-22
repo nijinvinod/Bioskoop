@@ -1,0 +1,26 @@
+<ion-view view-title="HASHTAGS">
+  <ion-content class="padding">
+      <div class="subheading centerText botPadding"><i class="icon ion-social-twitter"></i> ADD</div>
+      <div class="list">
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="Hashtag" ng-model="item.hashTag">
+          </label>
+          <button class="button button-small button-positive" ng-click="addHashtag()">
+            <i class="icon ion-social-twitter-outline"></i>
+          </button>
+        </div>
+      </div>
+      <div class="subheading centerText botPadding">YOUR HASHTAGS</div>
+      <ion-list>
+        <ion-item class="item-remove-animate" ng-repeat="hashtag in hashtagsList" type="item-text-wrap">
+          <i class="icon ion-social-twitter greyColor"></i> {{hashtag}}
+          <ion-option-button class="button-assertive" ng-click="removeHashtag('{{hashtag}}')">
+            DELETE
+          </ion-option-button>
+        </ion-item>
+      </ion-list>
+
+      
+  </ion-content>
+</ion-view>

@@ -1,0 +1,35 @@
+$appBodyBgColor : rgb(219, 223, 223);
+$themeBgColor: $appBodyBgColor;
+$themeFgPriColor : #000;
+$themeFgSecColor : #000;
+
+
+/** --- Generate Combination of Background and Foreground Colors --- **/
+@mixin generateTheme($bg, $fg){
+	background: $bg;
+	color: $fg;
+}
+
+@mixin generateBgAttributes(){
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.positive{
+	background: rgb(15, 173, 109);
+}
+.negative{
+	background: rgb(239, 102, 103);
+}
+.neutral{
+	background: #888;
+}
+$positiveFgColor: rgb(15, 173, 109);
+$negativeFgColor: rgb(239, 102, 103);
+
+
+
+
+.greyColor{color:#ccc}

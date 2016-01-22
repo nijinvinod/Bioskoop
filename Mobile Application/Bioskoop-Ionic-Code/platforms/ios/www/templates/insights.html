@@ -1,0 +1,42 @@
+<ion-view view-title="INSIGHTS">
+	<ion-content>
+		<div class="responses">
+			<div class="tweetDet">
+				<div class="profileImg" style="background:url({{tweet.userDetails.url}}) no-repeat center; background-size:100% 100%"></div>
+				<div class="details">
+					<div class="pName">{{tweet.user}}</div>
+					<div class="msg">{{tweet.message}}</div>
+				</div>
+			</div>
+			<div class="insights">
+				<div class="heading centerText">INSIGHTS</div>
+				<div class="people">
+					<div class="circle" style="background:url('https://pbs.twimg.com/profile_images/430438160670023680/-wyksVDY.jpeg') center no-repeat; background-size:100% 100%;">
+						<div class="c-content">@{{data.myHandle}}<span ng-click="editHandle()"> <i class="icon ion-ios-compose-outline"></i></span></div>
+					</div>
+					<div class="circle" style="background:url({{tweet.userDetails.url}}) no-repeat center; background-size:100% 100%">
+						<div class="c-content">{{tweet.user}}</div>
+					</div>
+				</div>
+				<div class="comparison">
+					<div class="set" ng-repeat="insight in insights">
+						<div class="name">{{insight.name}}</div>
+						<div ng-show="insight.val == 'green'" class="value positiveFgColor">{{insight.aScore}} - {{insight.bScore}}</div>
+						<div ng-show="insight.val == 'red'" class="value negativeFgColor">{{insight.aScore}} - {{insight.bScore}}</div>
+					</div>
+				</div>
+				<div ng-show="insights.length == 0 && error == undefined" >
+					<div class="dotIcon">...</div>
+					<div class="loadingText">
+						<div>Hey! Hang On</div>
+						Insights Comparision In-Progress
+					</div>
+				</div>
+				<div class="loadingText" ng-show="error != undefined">
+					<div>Sorry!</div>
+					{{error}}
+				</div>
+			</div>
+	    </div>
+    </ion-content>
+</ion-view>

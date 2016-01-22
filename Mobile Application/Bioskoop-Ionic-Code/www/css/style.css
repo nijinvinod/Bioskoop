@@ -1,0 +1,310 @@
+/** --- Generate Combination of Background and Foreground Colors --- **/
+.positive {
+  background: #0fad6d; }
+
+.negative {
+  background: #ef6667; }
+
+.neutral {
+  background: #888; }
+
+.greyColor {
+  color: #ccc; }
+
+/** --- START:: Generics ---- **/
+* {
+  font-family: 'Monda', sans-serif;
+  box-sizing: border-box; }
+
+html, body, h1, h2, h3, h4, h5, h6, button, a, a:link, a:visited {
+  font-family: 'Monda', sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+/** --- END:: Generics --- **/
+/** --- START:: APP Constants --- **/
+.pane, .view {
+  background: #dbdfdf; }
+
+.bar {
+  border: 0; }
+
+.smallGrey {
+  font-size: 12px; }
+
+.back-text {
+  display: none; }
+
+/** --- END:: APP Constants --- **/
+/* ---- START: Common Styles ----*/
+.heading {
+  font-size: 18px;
+  font-weight: bold; }
+
+.subheading {
+  font-size: 14px;
+  font-weight: normal; }
+
+.centerText {
+  text-align: center; }
+
+.botPadding {
+  padding-bottom: 10px; }
+
+.allPadding {
+  padding: 10px 15px; }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.flip {
+  display: inline-block;
+  transform: scaleX(-1);
+  /* standard */
+  -webkit-transform: scaleX(-1);
+  filter: FlipH;
+  /* IE 6/7/8 */ }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 30px 20px 20px;
+  line-height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 46px;
+  box-shadow: inset 0 0 0 5px white;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top; }
+  .circle .c-content {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    line-height: 13px; }
+    .circle .c-content div {
+      color: #888;
+      font-size: 10px; }
+
+.customTab {
+  width: 100%;
+  display: table;
+  background: #f8f8f8; }
+  .customTab .tabItem {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    cursor: pointer;
+    border-right: 1px solid #D5D5D5;
+    font-size: 20px;
+    width: 50%; }
+    .customTab .tabItem:last-child {
+      border: 0; }
+    .customTab .tabItem div {
+      font-size: 9px;
+      color: #555; }
+
+.watsonLoading {
+  background: #fff url(../img/watson.gif) center no-repeat;
+  background-size: 80% 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 50% auto 0; }
+
+.loadingText {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+  .loadingText div {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #A00; }
+
+.dotIcon {
+  font-size: 100px;
+  color: #777;
+  margin: 10px 0 60px;
+  text-align: center;
+  display: block; }
+
+/* ---- END: Common Styles ----*/
+.bigIcon {
+  text-align: center;
+  margin-top: 50%; }
+  .bigIcon img {
+    width: 60px;
+    height: 50px; }
+
+.dashboardItem a .box {
+  width: 48.5%;
+  height: 150px;
+  float: left;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 10px; }
+  .dashboardItem a .box .boxOverlay {
+    position: absolute;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .dashboardItem a .box .name {
+    font-size: 16px; }
+  .dashboardItem a .box .tweetCount {
+    margin-top: 5px; }
+.dashboardItem a:first-child .box {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 200px;
+  font-size: 40px; }
+  .dashboardItem a:first-child .box .boxOverlay {
+    padding-top: 70px; }
+  .dashboardItem a:first-child .box .name {
+    font-size: 18px; }
+  .dashboardItem a:first-child .box .tweetCount {
+    margin-top: 10px; }
+.dashboardItem a:nth-child(even) .box {
+  margin-right: 0;
+  float: right; }
+.dashboardItem a:nth-child(n) .boxOverlay {
+  background: rgba(59, 31, 77, 0.8);
+  color: #fff; }
+.dashboardItem a:nth-child(2n) .boxOverlay {
+  background: rgba(82, 167, 249, 0.9);
+  color: #fff; }
+.dashboardItem a:nth-child(3n) .boxOverlay {
+  background: rgba(254, 186, 104, 0.9); }
+.dashboardItem a:nth-child(4n) .boxOverlay {
+  background: rgba(198, 38, 6, 0.8);
+  color: #fff; }
+
+.dashDetails {
+  padding-bottom: 20px; }
+  .dashDetails .itemPic {
+    width: 100%;
+    height: 200px;
+    background: #fff; }
+  .dashDetails .itemName {
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px; }
+  .dashDetails .itemTweetCount {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold; }
+  .dashDetails .counts {
+    width: 100%;
+    text-align: center; }
+  .dashDetails .circle.neutral {
+    font-size: 26px; }
+
+a.catLink {
+  border: 0; }
+
+.category {
+  text-align: center; }
+  .category .circle {
+    font-size: 26px;
+    color: #555;
+    background: #6ebf41;
+    box-shadow: inset 0 0 0 0; }
+    .category .circle .c-content {
+      bottom: -20px;
+      font-size: 14px;
+      color: #0fad6d; }
+    .category .circle:nth-child(2n) {
+      background: #52a7f9;
+      color: #fff; }
+    .category .circle:nth-child(3n) {
+      background: #3b1f4d;
+      color: #fff; }
+    .category .circle:nth-child(4n) {
+      background: #c62606;
+      color: #fff; }
+    .category .circle:nth-child(5n) {
+      background: #feba68; }
+
+.responseHeader {
+  padding: 5px 0 10px;
+  border-radius: 5px;
+  margin: 10px;
+  color: #fff;
+  text-align: center; }
+  .responseHeader .counter {
+    font-size: 24px; }
+
+.responses {
+  margin: 0 10px;
+  padding-top: 10px; }
+  .responses .tweetDet {
+    margin-bottom: 15px; }
+    .responses .tweetDet .profileImg {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      vertical-align: top; }
+    .responses .tweetDet .details {
+      width: calc(100% - 50px);
+      display: inline-block;
+      padding-left: 5px;
+      padding-top: 4px;
+      vertical-align: top; }
+      .responses .tweetDet .details .pName {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .responses .tweetDet .details .msg {
+        font-size: 11px;
+        color: #455;
+        line-height: 14px; }
+
+.insights {
+  padding-top: 10px; }
+  .insights .people {
+    text-align: center;
+    margin-bottom: 30px; }
+    .insights .people .c-content {
+      font-size: 13px; }
+  .insights .comparison {
+    margin-top: 10px; }
+    .insights .comparison .set {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px; }
+      .insights .comparison .set .name {
+        font-size: 14px; }
+      .insights .comparison .set .value {
+        margin-top: 5px;
+        font-size: 30px;
+        color: #aaa; }
+      .insights .comparison .set .positiveFgColor {
+        color: #0fad6d; }
+      .insights .comparison .set .negativeFgColor {
+        color: #ef6667; }
+
+/*# sourceMappingURL=style.css.map */

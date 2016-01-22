@@ -1,0 +1,55 @@
+{
+	"totalCount": "400",
+	"positiveTweets": {
+		"count": "300",
+		"tweets": [
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			},
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			},
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			}
+		]
+	},
+	"negativeTweets": {
+		"count": "100",
+		"tweets": [
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			},
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			},
+			{
+				"message":"Movie is superb. Man can start moving to the next dimension",
+				"user":"Rahul Kannan",
+				"userProfile":"http://twitter.com/rahul.jpg",
+				"sentiment":"positive",
+				"score":"6.56"
+			}
+		]
+	}		
+}
