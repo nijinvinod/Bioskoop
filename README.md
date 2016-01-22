@@ -15,7 +15,7 @@ This version will enable you to add any Twitter Hashtag and retrieve tweets and 
 Note: This will take some time as Watson has to process all the tweets and segregate accordingly.
 
 #Video URL
-Choose Bioskoop.mp4 from the Git Tree and play it.<br/>
+Choose <b>Bioskoop.mp4</b> from the Git Tree and play it.<br/>
 Alternatively you can also view the video from this link
 
 
