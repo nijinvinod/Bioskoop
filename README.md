@@ -11,12 +11,14 @@ Bioskoop, a Watson-based shrewd system which plays an important role in finding 
 This version will enable you to quickly go through the application as we have already saved Watson processed results within the application.<br/>
 <b><i>Demo Hashtags - Interstellar, Twilight, Cinderella</i></b><br/><br/>
 <b>Live Version</b><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install <b>Bioskoop-Live.apk</b> from the above git tree.<br/>
-This version will enable you to add any Twitter Hashtag and retrieve tweets and results accordingly.<br/>
-Note: 
+This version will enable you to add any Twitter Hashtag and retrieve tweets and results accordingly.<br/><br/>
+<b>Note:</b> 
+<ul>
 <li>This will take some time as Watson has to process all the tweets and segregate accordingly. </li>
 <li>Try adding one hashtag at a time, as Watson allows only 1000 requests per day.</li>
 <li>Since this service is build for hackathon purpose, trail version doesn't allow extended support. Also, as we are processing large number of tweets 1000 requests gets over very soon.</li>
 <li>Recommend you to have a look at Quick Demo APK if you face this issue.</li>
+</ul>
 
 #Video URL
 Choose <b>Bioskoop.mp4</b> from the Git Tree and play it.<br/>
