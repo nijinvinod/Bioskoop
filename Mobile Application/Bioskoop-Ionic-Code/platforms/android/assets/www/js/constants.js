@@ -1,4 +1,4 @@
-var MOCK = true;
+var MOCK = false;
 
 //MOCK DATA
 var SERVER_URL = "https://api.myjson.com/";
@@ -16,16 +16,18 @@ var MOCK_CODE = ['27sg5','3jdet','29xlx'];
 //PRODUCTION
 // var BLUEMIX_URL = "http://watsonbioskoopv5.mybluemix.net/";
 // var BLUEMIX_URL = "http://bioskoopas.mybluemix.net/";
-// var SERVLET_PARAMETER_DATA = "?hashtag=";
-// var ALCHEMY_API = "&alchemyApi=";
-// var SERVLET_URL = BLUEMIX_URL + "WatsonBioSkoop/BioSkoop";
-// var SERVLET_PARAMETER = true;
-// var PI_SERVLET_URL = BLUEMIX_URL + "WatsonBioSkoop/BioSkoopPIServlet?";
+var BLUEMIX_URL = "http://bioskoop.mybluemix.net/";
+var SERVLET_PARAMETER_DATA = "?hashtag=";
+var ALCHEMY_API = "&alchemyApi=";
+var SERVLET_URL = BLUEMIX_URL + "WatsonBioSkoop/BioSkoop";
+var SERVLET_PARAMETER = true;
+var PI_SERVLET_URL = BLUEMIX_URL + "WatsonBioSkoop/BioSkoopPIServlet?";
 
 
 var APP_REFRESH = false;
 var STORED_TWEET = {};
 
+// Default Images only for Quick Version
 var DEFAULT_IMAGES = {
 	"Interstellar":"http://cdn-media-2.lifehack.org/wp-content/files/2014/12/Interstellar-2014-Poster-Wallpaper.jpg",
 	"Twilight":"http://www.breakingdawn-themovie.com/images/mainbg.jpg",
@@ -41,4 +43,4 @@ var DEFAULT_ALCHEMY_KEYS = [
     "f230b7e2a864d95bacc133772fdbb7a00354f966"
 ];
 
-var CURRENT_ALCHEMY_KEYS = DEFAULT_ALCHEMY_KEYS[5];
+var CURRENT_ALCHEMY_KEYS = DEFAULT_ALCHEMY_KEYS[3];
