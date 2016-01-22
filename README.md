@@ -14,7 +14,8 @@ This version will enable you to quickly go through the application as we have al
 This version will enable you to add any Twitter Hashtag and retrieve tweets and results accordingly.<br/>
 Note: This will take some time as Watson has to process all the tweets and segregate accordingly. 
 Try adding one hashtag at a time, as Watson allows only 1000 requests per day.<br/>
-Since this service is build for hackathon purpose, trail version doesn't allow extended support. Also, as we are processing large number of tweets 1000 requests gets over very soon.
+Since this service is build for hackathon purpose, trail version doesn't allow extended support. Also, as we are processing large number of tweets 1000 requests gets over very soon.<br/>
+Recommend you to have a look at Quick Demo APK if you face this issue.
 
 #Video URL
 Choose <b>Bioskoop.mp4</b> from the Git Tree and play it.<br/>
