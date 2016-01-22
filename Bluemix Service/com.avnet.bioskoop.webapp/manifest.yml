@@ -1,0 +1,10 @@
+---
+applications:
+- name: BioSkoopAS
+  memory: 512M
+  host: BioSkoopAS
+  domain: mybluemix.net
+  env: {
+    }
+  services: {
+    }
