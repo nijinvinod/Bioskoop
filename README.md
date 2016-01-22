@@ -16,7 +16,8 @@ Note: This will take some time as Watson has to process all the tweets and segre
 
 #Video URL
 Choose <b>Bioskoop.mp4</b> from the Git Tree and play it.<br/>
-Alternatively you can also view the video from this link
+Alternatively you can also view the video from this <a href="https://youtu.be/FZg_Ib8z1w4" target="_blank">Youtube</a> link<br/>
+Link: <a href="https://youtu.be/FZg_Ib8z1w4" target="_blank">https://youtu.be/FZg_Ib8z1w4</a>
 
 
 #Codebase
