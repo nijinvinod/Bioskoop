@@ -12,10 +12,11 @@ This version will enable you to quickly go through the application as we have al
 <b><i>Demo Hashtags - Interstellar, Twilight, Cinderella</i></b><br/><br/>
 <b>Live Version</b><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install <b>Bioskoop-Live.apk</b> from the above git tree.<br/>
 This version will enable you to add any Twitter Hashtag and retrieve tweets and results accordingly.<br/>
-Note: This will take some time as Watson has to process all the tweets and segregate accordingly. 
-Try adding one hashtag at a time, as Watson allows only 1000 requests per day.<br/>
-Since this service is build for hackathon purpose, trail version doesn't allow extended support. Also, as we are processing large number of tweets 1000 requests gets over very soon.<br/>
-Recommend you to have a look at Quick Demo APK if you face this issue.
+Note: 
+<li>This will take some time as Watson has to process all the tweets and segregate accordingly. </li>
+<li>Try adding one hashtag at a time, as Watson allows only 1000 requests per day.</li>
+<li>Since this service is build for hackathon purpose, trail version doesn't allow extended support. Also, as we are processing large number of tweets 1000 requests gets over very soon.</li>
+<li>Recommend you to have a look at Quick Demo APK if you face this issue.</li>
 
 #Video URL
 Choose <b>Bioskoop.mp4</b> from the Git Tree and play it.<br/>
